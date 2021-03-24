@@ -1,130 +1,121 @@
 * {
     box-sizing: border-box;
   }
-@media screen and (max-width: 768px) {
-    .a{
-        width: 480px;
-        height: 75px;
-        line-height:75px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    .container1{
-        width: 480px;
+@media screen and (max-width: 650px) {
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+
+        max-width: 480px;
+        width: 80vw;
+        min-width: 180px;
+
         height: 980px;
         margin-left: auto;
         margin-right: auto;
     }
-    .b {
+    #a{
+        flex: 100%;
+        height: 75px;
+        line-height:75px;
+        margin-top: 20px;
+    }
+    #b {
         height: 150px;
         line-height:150px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        flex: 100%;
     }
-    .l-Right{
-        width: 100%px;
-        height: 830px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .c {
+    #c {
         height: 125px;
         line-height:125px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        flex: 100%;
     }
-    .d {
-        clear: both;
+    #d {
         height: 125px;
         line-height:125px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        flex: 100%;
     }
-    .container2 {
+    .row{
+        flex: 100%;
+        display: flex;
+        flex-direction: row;
         width: 100%;
+    }
+    #e, #f, #g, #h {
+        flex: 50%;
         height: 250px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .column {
-        width: 50%;
-        height: 100%;
         line-height:250px;
-        float: left;
         
     }
-    .i{
-        width: 100%;
+    #i{
+        flex: 100%;
         height: 80px;
         line-height:80px;
-        margin-left: auto;
-        margin-right: auto;
         margin-bottom: 20px;
     }
 
 }
 
-@media screen and (min-width: 768px){
-    .a {
-        width: 960px;
-        height: 100px;
-        line-height:100px;
+@media screen and (min-width: 800px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+
+        max-width: 960px;
+        width: 80vw;
+        min-width: 780px;
+
+        height: 980px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
-    .container1{
-        width: 960px;
+    #a {
+        width: 100%;
+        height: 100px;
+        line-height:100px;
+    }
+    .outter-block{
+        display: flex;
+        flex: 100%;
+        flex-direction: row;
         height: 600px;
-        margin-left: auto;
-        margin-right: auto;
     }
-    .b {
-        width: 200px;
+    #b {
+        flex: 20.83%;
         height: 100%;
         line-height:600px;
-        float: left;
-        margin-bottom: 20px;
     }
-    .l-Right{
-        width: 760px;
+    .inner-block{
+        display: flex;
+        flex-wrap: wrap;
+        flex:80%;
         height: 100%;
-        float: left;
-        margin-bottom: 20px;
     }
-    .c{
-        clear: both;
-        width: 50%;
+    #c{
+        flex: 50%;
         height: 33.33%;
         line-height:200px;
-        float: left;
     }
-    .d{
-        width: 50%;
+    #d{
+        flex: 50%;
         height: 33.33%;
         line-height:200px;
-        float: left;
     }
-    .container2{
-        width: 50%;
-        height: 41.66%;
-        float:left;
+    .row{
+        display: flex;
+        flex: 50%;
+        flex-wrap: wrap;
+        height: 41.67%;
     }
-    .column{
-        width: 50%;
+    #e, #f, #g, #h {
+        flex: 25%;
         height: 100%;
-        line-height:250px;
-        float: left;
     }
-    .i{
-        width: 100%;
+    #i{
+        flex: 100%;
         height: 25%;
         line-height:150px;
-
-        clear: both;
     }
 }

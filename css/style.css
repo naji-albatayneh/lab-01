@@ -2,16 +2,16 @@
 @import url("/css/base.css");
 @import url("/css/layout.css");
 
-.a{
+#a{
     background-color: lightcoral;
 }
-.b {
+#b {
     background-color: rgb(177, 177, 75);
 }
-.c {
+#c {
     background-color: lightgreen;
 }
-.d {
+#d {
     background-color: lightslategray;
 }
 #e{
@@ -26,6 +26,6 @@
 #h {
     background-color: rgb(120, 84, 141);
 }
-.i{
+#i{
     background-color: rgb(146, 109, 40);
 }
